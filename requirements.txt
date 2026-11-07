@@ -1,0 +1,4 @@
+telethon
+mysql-connector-python
+scikit-learn
+python-dotenv
