@@ -37,7 +37,7 @@ def preprocess_text(text: str) -> str:
     text = text.lower()
     
     text = re.sub(r'https?://\S+|www\.\S+|t\.me/\S+', '', text)
-    text = re.sub(r'[^[^а-яіїєґa-z0-9\s]\s]', ' ', text)
+    text = re.sub(r'[^а-яіїєґa-z0-9\s]', ' ', text)
     
     words = text.split()
     cleaned_words = [word for word in words if word not in STOP_WORDS and len(word) > 2]
